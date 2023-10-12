@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXAMEN</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>  
+  <h1>English Exam - Level I</h1>
+<div class="exam">
+<a href="examenresu.php"><button class="btn btn-dark">Ver examenes cargados</button></a> <br>
+<form method="post" action="php/insertar.php">
+  <div>
+        <p>Inserte su nombre completo y su DNI para realizar el examen</p>
+        <p>Nombre completo:<input type="text" name="nombre" required></p>
+        <p>DNI:<input type="text" name="dni"></p>
+    </div>
+    <div>
+      <p>1. OBJECTIVES FOR THIS COURSE (What do you want to improve and learn?) TRY TO WRITE IN ENGLISH</p>
+      <textarea  name="objectives" rows="4" cols="50"></textarea>
+    </div>
+    
+    <div>
+      <p>2. Choose the correct question words</p>
+      <p>A. <select name="respuesta1">
+          <option value="where">Where</option>
+          <option value="who">Who</option>
+        </select> do you live? - I live in London.</p>
+      <p>B. <select name="respuesta2">
+          <option value="where">Where</option>
+          <option value="who">Who</option>
+        </select> 's that girl? - She's my sister.</p>
+    </div>
+
+    <div>
+        <p>3. Complete the box with the past simple form of these irregular verbs:</p>
+        <p>Buy: <input type="text" name="verb1"></p>
+        <p>Eat: <input type="text" name="verb2"></p>
+        <p>Forget: <input type="text" name="verb3"></p>
+        <p>Have: <input type="text" name="verb4"></p>
+        <p>Know: <input type="text" name="verb5"></p>
+    </div>
+    <div>
+        <p>4.Write a question about the words in bold.
+            Example:
+            He drank juice. - What did he drink?
+            </p>
+        <p>1.They went to Spain. <input type="text" name="verb6"></p>
+        <p>2.He writes novels. <input type="text" name="verb7"></p>
+    </div>
+
+    <div>
+        <p>4. Read the passages and choose the correct options according to the readings:</p>
+        <p>One of my favorite vacation places is Mexico. I really like the weather there because it never gets cold. The people are very nice too. They never laugh at my bad Spanish. The food is really good. Mexico City is a very interesting place to visit. It has some great museums and lots of fascinating old buildings. The hotels are too expensive to stay but there are more affordable options. For example, you can stay at one of the beach resorts like Acapulco. If you are planning to visit Mexico, you should definitely see the Mayan temples near Merida.</p>
+        
+        <p>1. A. <input type="radio" name="option1" value="A">Sam likes warm weather</p>
+        <p>   B. <input type="radio" name="option1" value="B">Sam doesn't like warm weather at all</p>
+        <p>   C. <input type="radio" name="option1" value="C">Sam hates warm water</p>
+        <p>   D. <input type="radio" name="option1" value="D">Sam likes cold weather</p>
+         <br>
+        <p>2. A. <input type="radio" name="option2" value="A">His Spanish is very good</p>
+        <p>B. <input type="radio" name="option2" value="B">He speaks Spanish very well</p>
+        <p>C. <input type="radio" name="option2" value="C">He is Spanish</p>
+        <p>D. <input type="radio" name="option2" value="D">He doesn't speak Spanish very well</p>
+         <br>
+        <p>3. A. <input type="radio" name="option3" value="A">There's a lot to see and do in Mexico</p>
+        <p>B. <input type="radio" name="option3" value="B">There's a lot to see and do in Mexico</p>
+        <p>C. <input type="radio" name="option3" value="C">Mexico is a dirty place</p>
+        <p>D. <input type="radio" name="option3" value="D">Tourists never come to Mexico</p>
+         <br>
+        <p>4. A. <input type="radio" name="option4" value="A">Hotels are very cheap in Mexico</p>
+        <p>B. <input type="radio" name="option4" value="B">The hotels aren't comfortable there</p>
+        <p>C. <input type="radio" name="option4" value="C">Hotels are all poor in Mexico</p>
+        <p>D. <input type="radio" name="option4" value="D">The hotels in Mexico are pretty expensive</p>
+    </div> 
+    <div>
+        <p>5.Write a small paragraph describing your favourite place to go on holiday.</p>
+        <p>I like to go to brasilian beach , more specific to “buzios” because the weather is always perfect , there isn’t to many rainy days and the wind is always hot. Also I liked because the food in the beach are very nice with great flavours and not to expensive. Is perfect to go with kids and family , or just to spent a nice time with your girlfriend. The center of the city is a little small , but you get there all you need to get a realy nice vacations.</p>
+        <textarea name="objectives2" rows="4" cols="50"></textarea>
+    </div>
+    <center><input class="button" type="submit" value="Subir examen"></center>
+  </div>
+</form>
+</body>
+</html>
